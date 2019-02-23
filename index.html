@@ -40,7 +40,7 @@
 			if (selectedQuiz) {
 			    $('#titleScreen').hide();
 			    $('#jsQuizEngine').show();
-			    quizEngine = jsQuizEngine($('#jsQuizEngine'), { quizUrl: 'quiz/Azure_70-533_Objective_' + selectedQuiz + '.htm' });
+			    quizEngine = jsQuizEngine($('#jsQuizEngine'), { quizUrl: 'quiz/Azure_AZ-100_Objective_' + selectedQuiz + '.htm' });
 			} else {
 			    $('#titleScreen').show();
 			    $('#jsQuizEngine, #navbar-intest').hide();
@@ -67,7 +67,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right social-nav">
                     <li>
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://crpietschmann.github.io/Azure-70-533-Practice-Test/" data-via="crpietschmann">Tweet</a>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://github.com/gsuttie/Azure-AZ-100-Practice-Test" data-via="gregor_suttie">Tweet</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                     </li>
                 </ul>
@@ -77,14 +77,13 @@
     <section class="container">
 
 	<div class="alert alert-danger">
-	    <strong>RETIRED: Since the 70-533 certification exam is retired as of December 31, 2018, this project will no longer be updated going forward. Please subscribe to <a href="http://BuildAzure.com">http://BuildAzure.com</a> for the latest on Microsoft and Azure certification news. Thanks!</strong>
         </div>
 	    
         <div id="titleScreen">	
             <div class="jumbotron">
                 <h1>Microsoft Azure Infrastructure and Deployment (AZ-100) Practice Test</h1>
                 <p>
-                    This is a set of practice tests designed to provide assistance when studying for the Microsoft certification <a href="https://www.microsoft.com/learning/en-us/exam-70-533.aspx">Implementing Microsoft Azure Infrastructure Solutions (70-533)</a> exam.
+                    This is a set of practice tests designed to provide assistance when studying for the Microsoft certification <a href="https://www.microsoft.com/en-us/learning/exam-AZ-100.aspx">Microsoft Azure Infrastructure and Deployment (AZ-100)</a> exam.
                 </p>
             </div>
 
@@ -95,32 +94,19 @@
                     <div class="panel-heading" role="tab" id="headingObj1">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseObj1" aria-expanded="true" aria-controls="collapseObj1">
-                                Implement Web Apps (15-20%)
+                                Manage Azure subscriptions and resources (15-20%)
                             </a>
                         </h4>
                     </div>
                     <div id="collapseObj1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingObj1">
                         <div class="panel-body">
                             <p>
-                                <a href="?1.1">Deploy Web Apps</a><br>
-                                Define deployment slots; rollback deployments, configure and deploy packages, deploy web jobs, schedule web jobs
+                                <a href="?1.1">Manage Azure subscriptions</a><br>
+                                May include but not limited to: Assign administrator permissions; configure cost center quotas and tagging; configure Azure subscription policies at Azure subscription level
                             </p>
                             <p>
-                                <a href="?1.2">Configure Web Apps</a><br>
-                                Configure app settings, connection strings, handlers, and virtual directories;
-                                configure certicates, custom domains, and traffic manager; configure SSL bindings and runtime configurations; manage Web Apps by using Azure PowerShell and Xplat-CLI
-                            </p>
-                            <p>
-                                Configure diagnostics, monitoring, and analytics<br>
-                                Retrieve diagnostics data; view straming logs; configure endpoint monitoring, alerts, and diagnostics; monitor website resources
-                            </p>
-                            <p>
-                                Configure scale and resilience<br>
-                                Configure auto-scale using built-in and custom schedules; configure by metric; change the size of an instance
-                            </p>
-                            <p>
-                                Manage App Service plans<br>
-                                Create App Service plans; migrate Web Apps between App Service plans; create a Web App within an App Service plan
+                                <a href="?1.2">Analyze resource utilization and consumption</a><br>
+                                May include but not limited to: Configure diagnostic settings on resources; ; create and test alerts; analyze alerts across subscription; analyze metrics across subscription; create action groups; monitor for unused resources; monitor spend; report on spend; utilize Log Search query functions; view alerts in Log Analytics
                             </p>
                         </div>
                     </div>
@@ -309,7 +295,7 @@
                         <div class="caption">
                             <h3>Are you ready to get Certified?</h3>
                             <p>If you've mastered these practice tests, then you might be ready for the real thing.</p>
-                            <p><a href="https://www.microsoft.com/learning/en-us/exam-70-533.aspx" target="_blank" role="button" class="btn btn-primary">Schedule Exam</a></p>
+                            <p><a href="https://www.microsoft.com/en-us/learning/exam-AZ-100.aspx" target="_blank" role="button" class="btn btn-primary">Schedule Exam</a></p>
                         </div>
                     </div>
                 </div>
@@ -327,8 +313,8 @@
                         <div class="caption">
                             <h3>Want to help write questions?</h3>
                             <p>If you want to contribute to this project, please submit a Pull Request.</p>
-                            <a href="https://github.com/crpietschmann/Azure-70-533-Practice-Test" target="_blank"><img src="images/github-logo.png" style="float: right; width: 2em;" /></a>
-                            <p><a href="https://github.com/crpietschmann/Azure-70-533-Practice-Test/pulls" target="_blank" role="button" class="btn btn-primary">Submit Pull Request</a></p>
+                            <a href="https://github.com/gsuttie/Azure-AZ-100-Practice-Test" target="_blank"><img src="images/github-logo.png" style="float: right; width: 2em;" /></a>
+                            <p><a href="https://github.com/gsuttie/Azure-AZ-100-Practice-Test/pulls" target="_blank" role="button" class="btn btn-primary">Submit Pull Request</a></p>
                         </div>
                     </div>
                 </div>
@@ -378,7 +364,7 @@
         </div>
     </section>
     <footer class="container">
-		<p>The full source code and questions for this project is available at: <a href="http://github.com/crpietschmann/Azure-70-533-Practice-Test">http://github.com/crpietschmann/Azure-70-533-Practice-Test</a></p>
+		<p>The full source code and questions for this project is available at: <a href="https://github.com/gsuttie/Azure-AZ-100-Practice-Test">https://github.com/gsuttie/Azure-AZ-100-Practice-Test</a></p>
 		<p>Powered by <a href="https://github.com/crpietschmann/jsQuizEngine">jsQuizEngine</a> and Created by <a href="http://buildazure.com">Chris Pietschmann</a></p>
         <p><small>Disclaimer: This project is not affiliated with Microsoft. All trademarks for Microsoft, Azure, etc are owned by Microsoft.</small></p>
     </footer>
